@@ -53,6 +53,4 @@ public class AnimalServiceImpl implements AnimalService {
         animalRepository.save(animal);
         return mapperAnimalDTO.execute(animal);
     }
-
-
 }
