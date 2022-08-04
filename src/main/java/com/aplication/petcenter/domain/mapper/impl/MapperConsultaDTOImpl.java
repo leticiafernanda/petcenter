@@ -55,6 +55,7 @@ public class MapperConsultaDTOImpl implements MapperConsultaDTO {
         var consultas = ServicosDTO.builder()
                 .id(consulta.getId())
                 .build();
+
         return Collections.singletonList(consultas);
     }
 }

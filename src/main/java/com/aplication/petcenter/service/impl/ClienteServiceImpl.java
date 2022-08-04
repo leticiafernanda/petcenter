@@ -41,6 +41,7 @@ public class ClienteServiceImpl implements ClienteService {
         clienteDTO.setId(clienteId);
         Cliente cliente = mapperClienteDTO.execute(clienteDTO, currentCliente);
         clienteRepository.save(cliente);
+
         return mapperClienteDTO.execute(cliente);
     }
 }
