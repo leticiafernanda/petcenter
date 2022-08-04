@@ -31,6 +31,7 @@ public class MapperServicosDTOImpl implements MapperServicosDTO {
         var vacinas = VacinaDTO.builder()
                 .id(servicos.getId())
                 .build();
+
         return Collections.singletonList(vacinas);
     }
     }
